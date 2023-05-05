@@ -1,0 +1,25 @@
+[project]
+name = "ml_export"
+version = "0.0.1"
+description = "Export pre-trained ML models as source code"
+readme = "README.md"
+requires-python = ">=3.7"
+license = { file = "LICENSE.txt" }
+keywords = [ "sklearn", "scikit-learn" ]
+authors = [
+  { name="Grzegorz Blach" },
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest", "scikit-learn", "pandas"
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
